@@ -18,21 +18,9 @@
     }
 
     .jumbotron {
-      background-color: blueviolet; /* Orange */
+      background-color: blueviolet; 
       color: #ffffff;
       padding: 100px 25px;
-    }
-
-    .portifolio {
-        background-color: #f6f6f6;
-    }
-
-    .about {
-        background-color: #f3dfdf;
-    }
-
-    .contact {
-        background-color: #bdacac;
     }
 
     /* card CSS */
@@ -82,10 +70,14 @@
     }
 
     /* portifolio css */
+    #portifolio {
+      background-color: blueviolet;
+    }
+
     .thumbnail {
         padding: 0 0 15px 0;
         border: none;
-        border-radius: 0;
+        border-radius: 1;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -98,6 +90,25 @@
         margin: auto;
         overflow: hidden;
     }
+    
+    /* clients CSS */
+    #clients {
+      margin-top: 90px;
+      margin-bottom: 200px;
+    }
+
+    /* about  CSS */
+    #about {
+      background-color: #f3dfdf;
+      margin-top: 90px;
+      padding: 100px;
+    }
+
+    /* contact  CSS */
+    #contact {
+      padding: 70px;
+    }
+
 
     /* navbar */
     .navbar {
@@ -129,28 +140,30 @@
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">FATEC OSASCO</a>
+    <div id="home" class="container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">FATEC OSASCO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#portifolio">PORTIFOLIO</a></li>
+                <li><a href="#clients">CLIENTS</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="#about">HOME</a></li>
-              <li><a href="#services">SERVICES</a></li>
-              <li><a href="#portfolio">PORTFOLIO</a></li>
-              <li><a href="#pricing">CLIENTS</a></li>
-              <li><a href="#portfolio">ABOUT</a></li>
-              <li><a href="#pricing">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
-    </nav>
+       </nav>
+      </div>
 
     <div class="jumbotron">
         <h1>FATEC OSASCO </h1>
@@ -162,79 +175,83 @@
         <img src="../img/hero/macbook.png" alt="macbook">
     </div><br>
 
-    <h1>WHAT WE DO</h1>
-    <h3>lorem ipsum...</h3>
-    <div class="cards">
-        <div class="card1">
-            <div class="card-image"><img src="../img/services/responsive.png" alt="phone"></div>
-            <div class="card-desc">
-                <h4><strong>Fully responsive</strong></h4>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
-                facere voluptatum voluptatem ullam expedita nemo minima. </div>
-        </div>
-        <div class="card1">
-            <div class="card-image"><img src="../img/services/bs3.png" alt="bootstrap3 logo"></div>
-            <div class="card-desc">
-                <h4><strong>Bootstrap3</strong></h4>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
-                facere voluptatum voluptatem ullam expedita nemo minima. </div>
-        </div>
-        <div class="card1">
-            <div class="card-image"><img src="../img/services/free.png" alt="free logo"></div>
-            <div class="card-desc">
-                <h4><strong>100% free</strong></h4>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
-                facere voluptatum voluptatem ullam expedita nemo minima. </div>
-        </div>
+    <div id="services" class="container-fluid">
+      <h1>WHAT WE DO</h1>
+      <h3>lorem ipsum...</h3><br><br>
+      <div class="cards">
+          <div class="card1">
+              <div class="card-image"><img src="../img/services/responsive.png" alt="phone"></div>
+              <div class="card-desc">
+                  <h4><strong>Fully responsive</strong></h4>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                  facere voluptatum voluptatem ullam expedita nemo minima. </div>
+          </div>
+          <div class="card1">
+              <div class="card-image"><img src="../img/services/bs3.png" alt="bootstrap3 logo"></div>
+              <div class="card-desc">
+                  <h4><strong>Bootstrap3</strong></h4>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                  facere voluptatum voluptatem ullam expedita nemo minima. </div>
+          </div>
+          <div class="card1">
+              <div class="card-image"><img src="../img/services/free.png" alt="free logo"></div>
+              <div class="card-desc">
+                  <h4><strong>100% free</strong></h4>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                  facere voluptatum voluptatem ullam expedita nemo minima. </div>
+          </div>
+      </div>
     </div><br><br>
 
-    <div class="container-fluid text-center bg-grey">
-        <h2>PORTIFOLIO</h2>
-        <h4>lorem..</h4>
-        <div class="row text-center">
-          <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="../img/portfolio/img1.jpg" alt="">
+    <div id="portifolio" class="container-fluid">
+      <div class="container-fluid text-center bg-grey">
+          <h2>PORTIFOLIO</h2>
+          <h4>lorem..</h4>
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img1.jpg" alt="">
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="../img/portfolio/img2.jpg" alt="">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img2.jpg" alt="">
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="../img/portfolio/img3.jpg" alt="">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img3.jpg" alt="">
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="../img/portfolio/img4.jpg" alt="">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img4.jpg" alt="">
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="../img/portfolio/img5.jpg" alt="">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img5.jpg" alt="">
+              </div>
             </div>
-          </div>
 
-          <div class="col-sm-4">
-            <div class="thumbnail">
-                <img src="../img/portfolio/img6.jpg" alt="">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img6.jpg" alt="">
+              </div>
             </div>
-          </div>
 
-        </div>
+          </div>
+      </div>
     </div>
 
-    <div class="clients">
+    <div id="clients" class="container-fluid">
         <h1>CLIENTS</h1>
         <h2>lorem..</h2>
-        <div class="imagens-clientes">
+        <div class="container-fluid text-center bg-grey">
             <img src="../img/clients/img1.png" alt="">
             <img src="../img/clients/img2.png" alt="">
             <img src="../img/clients/img3.png" alt="">
@@ -242,7 +259,7 @@
         </div>
     </div>
 
-    <div class="about">
+    <div id="about" class="container-fluid">
         <h1>ABOUT US</h1>
         <h2>lorem ipsum</h2>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
@@ -262,14 +279,13 @@
         <img src="../img/about/graph.png" alt="about">
     </div>
 
-    <div class="container-fluid bg-grey">
+    <div id="contact" class="container-fluid bg-grey">
         <h2 class="text-center">Contact us</h2>
         <h3>lorem ipsum...</h3>
         <div class="row">
           <div class="col-sm-5">
             <p>Contact us and we'll get back to you within 24 hours.</p>
             <p><span class="glyphicon glyphicon-map-marker"></span>Osasco, SP 00000-000 BR</p>
-            <p><span class="glyphicon glyphicon-phone"></span>+55 11999999999</p>
             <p><span class="glyphicon glyphicon-envelope"></span>info@fatecosasco.com</p>
           </div>
           <div class="col-sm-7">
@@ -290,7 +306,13 @@
           </div>
         </div>
       </div>
-  
+      
+      <footer class="container-fluid text-center">
+        <a href="#myPage" title="To Top" style="color: red;">
+          <span class="glyphicon glyphicon-chevron-up"></span>
+        </a>
+        <p><b>GET BACK TO TOP</b></p>
+      </footer>
 
 
 </body>
