@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Theme Company</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <style>
+    body {
+        margin: 0;
+    }
+
+    * {
+        font:  'Montserrat', sans-serif;;
+    }
+
+    .jumbotron {
+      background-color: blueviolet; /* Orange */
+      color: #ffffff;
+      padding: 100px 25px;
+    }
+
+    .portifolio {
+        background-color: #f6f6f6;
+    }
+
+    .about {
+        background-color: #f3dfdf;
+    }
+
+    .contact {
+        background-color: #bdacac;
+    }
+
+    /* card CSS */
+    .cards {
+        margin: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding: 60px 50px;
+    }
+
+    .card1 {
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+        width: 300px;
+        height: 350px;
+        overflow: hidden;
+    }
+
+    .card-image {
+        margin: auto;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .card-image img {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .card-desc {
+        width: 230px;
+        height: 150px;
+        margin: auto;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .card-desc h4 {
+        color: salmon;
+        text-align: center;
+    }
+
+    /* portifolio css */
+    .thumbnail {
+        padding: 0 0 15px 0;
+        border: none;
+        border-radius: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 10px;
+        margin: auto;
+        overflow: hidden;
+    }
+
+    /* navbar */
+    .navbar {
+        margin-bottom: 0;
+        background-color: rgba(0,0,0,0.6);
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+        color: #fff !important;
+    }
+
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: whitesmoke !important;
+        background-color: red !important;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">FATEC OSASCO</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="#about">HOME</a></li>
+              <li><a href="#services">SERVICES</a></li>
+              <li><a href="#portfolio">PORTFOLIO</a></li>
+              <li><a href="#pricing">CLIENTS</a></li>
+              <li><a href="#portfolio">ABOUT</a></li>
+              <li><a href="#pricing">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1>FATEC OSASCO </h1>
+        <p>Start your business or personal site right now!</p> 
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus repudiandae nesciunt recusandae! Debitis, accusamus distinctio eligendi 
+            praesentium nulla earum repellendus ipsum officia magni cupiditate expedita ipsa incidunt totam facilis numquam.</p>
+        <button class="btn btn-default btn-lg">DOWNLOAD NOW!</button>
+        <button class="btn btn-default btn-lg">LEARN MORE!</button>
+        <img src="../img/hero/macbook.png" alt="macbook">
+    </div><br>
+
+    <h1>WHAT WE DO</h1>
+    <h3>lorem ipsum...</h3>
+    <div class="cards">
+        <div class="card1">
+            <div class="card-image"><img src="../img/services/responsive.png" alt="phone"></div>
+            <div class="card-desc">
+                <h4><strong>Fully responsive</strong></h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                facere voluptatum voluptatem ullam expedita nemo minima. </div>
+        </div>
+        <div class="card1">
+            <div class="card-image"><img src="../img/services/bs3.png" alt="bootstrap3 logo"></div>
+            <div class="card-desc">
+                <h4><strong>Bootstrap3</strong></h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                facere voluptatum voluptatem ullam expedita nemo minima. </div>
+        </div>
+        <div class="card1">
+            <div class="card-image"><img src="../img/services/free.png" alt="free logo"></div>
+            <div class="card-desc">
+                <h4><strong>100% free</strong></h4>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                facere voluptatum voluptatem ullam expedita nemo minima. </div>
+        </div>
+    </div><br><br>
+
+    <div class="container-fluid text-center bg-grey">
+        <h2>PORTIFOLIO</h2>
+        <h4>lorem..</h4>
+        <div class="row text-center">
+          <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="../img/portfolio/img1.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="../img/portfolio/img2.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="../img/portfolio/img3.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="../img/portfolio/img4.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="../img/portfolio/img5.jpg" alt="">
+            </div>
+          </div>
+
+          <div class="col-sm-4">
+            <div class="thumbnail">
+                <img src="../img/portfolio/img6.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+    </div>
+
+    <div class="clients">
+        <h1>CLIENTS</h1>
+        <h2>lorem..</h2>
+        <div class="imagens-clientes">
+            <img src="../img/clients/img1.png" alt="">
+            <img src="../img/clients/img2.png" alt="">
+            <img src="../img/clients/img3.png" alt="">
+            <img src="../img/clients/img4.png" alt="">
+        </div>
+    </div>
+
+    <div class="about">
+        <h1>ABOUT US</h1>
+        <h2>lorem ipsum</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+            aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+            aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+            aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+            aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+            aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+            aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+            aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+            aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique. </p>
+        <img src="../img/about/graph.png" alt="about">
+    </div>
+
+    <div class="container-fluid bg-grey">
+        <h2 class="text-center">Contact us</h2>
+        <h3>lorem ipsum...</h3>
+        <div class="row">
+          <div class="col-sm-5">
+            <p>Contact us and we'll get back to you within 24 hours.</p>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Osasco, SP 00000-000 BR</p>
+            <p><span class="glyphicon glyphicon-phone"></span>+55 11999999999</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>info@fatecosasco.com</p>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="5"></textarea><br>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button class="btn btn-default pull-right" type="submit">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+
+
+</body>
+</html>
