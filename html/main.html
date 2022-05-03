@@ -1,539 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Theme Made By www.w3schools.com -->
-  <title>Bootstrap Theme Company Page</title>
+  <title>FATEC OSASCO</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <style>
-  * {
-      font: 'Montserrat', sans-serif;
-  }
 
-  body {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-  }
-  h2 {
-    font-size: 24px;
-    text-transform: uppercase;
-    color: #303030;
-    font-weight: 600;
-    margin-bottom: 30px;
-  }
-  h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    color: #303030;
-    font-weight: 400;
-    margin-bottom: 30px;
-  }  
-  .jumbotron {
-    background-color: rgb(255, 255, 0);
-    color: #fff;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
-  .container-fluid {
-    padding: 60px 50px;
-  }
-  .bg-grey {
-    background-color: #f6f6f6;
-  }
-  .logo-small {
-    color: #f4511e;
-    font-size: 50px;
-  }
-  .logo {
-    color: #f4511e;
-    font-size: 200px;
-  }
-  .thumbnail {
-    padding: 0 0 15px 0;
-    border: none;
-    border-radius: 0;
-  }
-  .thumbnail img {
-    width: 100%;
-    height: 100%;
-    margin-bottom: 10px;
-  }
-  .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
-  }
-  .carousel-indicators li {
-    border-color: #f4511e;
-  }
-  .carousel-indicators li.active {
-    background-color: #f4511e;
-  }
-  .item h4 {
-    font-size: 19px;
-    line-height: 1.375em;
-    font-weight: 400;
-    font-style: italic;
-    margin: 70px 0;
-  }
-  .item span {
-    font-style: normal;
-  }
-  .panel {
-    border: 1px solid #f4511e; 
-    border-radius:0 !important;
-    transition: box-shadow 0.5s;
-  }
-  .panel:hover {
-    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-  }
-  .panel-footer .btn:hover {
-    border: 1px solid #f4511e;
-    background-color: #fff !important;
-    color: #f4511e;
-  }
-  .panel-heading {
-    color: #fff !important;
-    background-color: #f4511e !important;
-    padding: 25px;
-    border-bottom: 1px solid transparent;
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-  }
-  .panel-footer {
-    background-color: white !important;
-  }
-  .panel-footer h3 {
-    font-size: 32px;
-  }
-  .panel-footer h4 {
-    color: #aaa;
-    font-size: 14px;
-  }
-  .panel-footer .btn {
-    margin: 15px 0;
-    background-color: #f4511e;
-    color: #fff;
-  }
-  .navbar {
-    margin-bottom: 0;
-    background-color: rgba(0,0,0,1);
-    z-index: 9999;
-    border: 0;
-    font-size: 12px !important;
-    line-height: 1.42857143 !important;
-    letter-spacing: 4px;
-    border-radius: 0;
-    font-family: Montserrat, sans-serif;
-  }
-  .navbar li a, .navbar .navbar-brand {
-    color: #fff !important;
-  }
-  .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: white !important;
-    background-color: RED !important;
-  }
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
-    color: #fff !important;
-  }
-  footer .glyphicon {
-    font-size: 20px;
-    margin-bottom: 20px;
-    color: #f4511e;
-  }
-  .slideanim {visibility:hidden;}
-  .slide {
-    animation-name: slide;
-    -webkit-animation-name: slide;
-    animation-duration: 1s;
-    -webkit-animation-duration: 1s;
-    visibility: visible;
-  }
-  @keyframes slide {
-    0% {
-      opacity: 0;
-      transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      transform: translateY(0%);
+  <style>
+    .jumbotron {
+      background-color: yellow; 
+      color: black;
+      padding: 100px 25px;
     }
-  }
-  @-webkit-keyframes slide {
-    0% {
-      opacity: 0;
-      -webkit-transform: translateY(70%);
-    } 
-    100% {
-      opacity: 1;
-      -webkit-transform: translateY(0%);
+
+    #services {
+      padding: 65px;
     }
-  }
-  @media screen and (max-width: 768px) {
-    .col-sm-4 {
-      text-align: center;
-      margin: 25px 0;
+
+    body {
+        margin: 0;
     }
-    .btn-lg {
-      width: 100%;
-      margin-bottom: 35px;
+
+    * {
+        font:  'Montserrat', sans-serif;;
     }
-  }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
+
+    .cartoes {
+        margin: 10px;
+        padding: 60px 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
     }
-  }
+
+    .cartaoEdit {
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+        overflow: hidden;
+        width: 315px;
+        height: 370px;
+    }
+
+    .card-image {
+        margin: auto;
+        overflow: hidden;
+        margin-top: 10px;
+    }
+
+    .card-image img {
+        width: 50%;
+        height: 50%;
+        margin: auto;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cartaoDescricao {
+        width: 230px;
+        height: 150px;
+        margin: auto;
+        margin-top: 10px;
+        overflow: hidden;
+    }
+
+    .cartaoDescricao h4 {
+        color: black;
+        text-align: center;
+    }
+
+    #portifolio {
+      background-color: yellow;
+      padding: 65px;
+    }
+
+    .thumbnail {
+        padding: 0 0 10px 0;
+        border: none;
+        border-radius: 1;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    .thumbnail img {
+        width: 100%;
+        height: 50%;
+        margin-bottom: 10px;
+        margin: auto;
+        overflow: hidden;
+    }
+    
+    /* clients CSS */
+    #clients {
+      margin-top: 90px;
+      margin-bottom: 200px;
+      padding: 65px;
+    }
+
+    /* about  CSS */
+    #about {
+      background-color: yellow;
+      margin-top: 90px;
+      padding: 100px;
+    }
+
+    #about-text{
+      display: flex;
+      align-items: center;
+      font-size: 18px;
+      text-align: justify;
+      margin-top: 90px;
+    }
+
+    #about-text img{
+      padding-left: 50px; 
+    }
+
+    /* contact  CSS */
+    #contact {
+      padding: 65px;
+      background-color: whitesmoke;
+    }
+
+
+    /* navbar */
+    .navbar {
+        margin-bottom: 0;
+        background-color: rgba(245, 245, 245, 0.89);
+        z-index: 9999;
+        border: 0;
+        font-size: 12px !important;
+        line-height: 1.42857143 !important;
+        letter-spacing: 4px;
+        border-radius: 0;
+        width: 100%;
+        overflow: auto;
+    }
+
+    ul li {
+      list-style-type: none;
+      display: inline-block;
+    }
+
+    .navbar li a, .navbar .navbar-brand {
+        color: black !important;
+    }
+
+    .navbar-nav li a:hover, .navbar-nav li.active a {
+        color: whitesmoke !important;
+        background-color: red !important;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: transparent;
+        color: #fff !important;
+    }
+
+    /* SVG */
+    svg {
+      height:15px;
+    }
+
+    #svg1:hover {
+      fill: blue;
+    }
+
+    #svg2:hover {
+      fill: rgb(0, 0, 112);
+    }
+
+    #svg3:hover {
+      fill: rgb(0, 110, 255);
+    }
+
+    #svg4:hover {
+      fill: rgb(241, 81, 81);
+    }
+
+    /* subtitulos */
+    .title {
+      border-left: 5px solid blueviolet;
+      margin: auto;
+      font-size: 22pt;
+      padding: 10px;
+    }
+
+    .title1 {
+      border-left: 5px solid whitesmoke;
+      margin: auto;
+      font-size: 22pt;
+      padding: 10px;
+    }
+
+    /* formulario */
+    form{
+      font-family: Calibri, sans-serif;
+      font-size: 18px;
+    }
+
+    fieldset{
+      border: none;
+    }
+
+    legend{
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    .form-group{
+      margin: 7px auto;
+    }
+
+    label{
+      width: 150px;
+      display: inline-block;
+    }
+
+    input[type="text"], input[type="email"]{
+      padding: 4px;
+      border-radius: 5px;
+      
+    }
+
+    input:invalid{
+      border-color: crimson;
+      box-shadow: 0px 0px 3px crimson;
+    }
+
+    input:focus{
+      outline: none;
+    }
+
+    input:focus:invalid{
+      box-shadow: none;
+    }
+
+    span{
+      color: crimson;
+    }
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
-      </button>
-      <a class="navbar-brand" href="#myPage">FATEC OSASCO</a>
+    <div id="home" class="container-fluid">
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>   FATEC OSASCO</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"/></svg>
+                   HOME</a></li>
+                <li><a href="#services"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M280 145.3V112h16C309.3 112 320 101.3 320 88S309.3 64 296 64H215.1C202.7 64 192 74.75 192 87.1S202.7 112 215.1 112H232v33.32C119.6 157.3 32 252.4 32 368h448C480 252.4 392.4 157.3 280 145.3zM488 400h-464C10.75 400 0 410.7 0 423.1C0 437.3 10.75 448 23.1 448h464c13.25 0 24-10.75 24-23.1C512 410.7 501.3 400 488 400z"/></svg>  SERVICES</a></li>
+                <li><a href="#portifolio"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M194.6 32H317.4C338.1 32 356.4 45.22 362.9 64.82L373.3 96H448C483.3 96 512 124.7 512 160V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V160C0 124.7 28.65 96 64 96H138.7L149.1 64.82C155.6 45.22 173.9 32 194.6 32H194.6zM256 384C309 384 352 341 352 288C352 234.1 309 192 256 192C202.1 192 160 234.1 160 288C160 341 202.1 384 256 384z"/></svg>  PORTIFOLIO</a></li>
+                <li><a href="#clients"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>  CLIENTS</a></li>
+                <li><a href="#about"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>  ABOUT</a></li>
+                <li><a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z"/></svg>  CONTACT</a></li>
+              </ul>
+            </div>
+          </div>
+       </nav>
     </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">HOME</a></li>
-        <li><a href="#services">SERVICES</a></li>
-        <li><a href="#portfolio">PORTFOLIO</a></li>
-        <li><a href="#pricing">CLIENTS</a></li>
-        <li><a href="#pricing">ABOUT</a></li>
-        <li><a href="#contact">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
 
-<div class="jumbotron text-center">
-  <h1>FATEC OSASCO</h1> 
-  <p>Start your business or personal site right now!</p> 
-  <div class="col-sm-4">
-    <img src="../img/hero/macbook.png" alt="macbook">
-  </div>
-  <button class="btn btn-default btn-lg">DOWNLOAD NOW!</button>
-  <button class="btn btn-default btn-lg">LEARN MORE!</button>
-</div>
+    <div class="jumbotron">
+        <h1 style="text-align: center;">FATEC OSASCO </h1>
+        <p style="text-align: center;">Start your business or personal site right now!</p> 
+        <p style="padding: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus repudiandae nesciunt recusandae! Debitis, accusamus distinctio eligendi 
+            praesentium nulla earum repellendus ipsum officia magni cupiditate expedita ipsa incidunt totam facilis numquam.</p>
+        <img src="../img/hero/macbook.png" alt="macbook">
+        <button class="btn btn-default btn-lg">DOWNLOAD NOW!</button>
+        <button class="btn btn-default btn-lg" style="margin-left: 20px;">LEARN MORE!</button>
+    </div><br>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-    <h2>WHAT WE DO</h2><br>
-    <h4>too mutch things!</h4>
-    <div class="row text-center slideanim">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="../img/services/bs3.png" alt="Paris" width="400" height="300">
-          <p><strong>Fully responsive</strong></p>
-          <p>lorem</p>
-        </div>
+    <div id="services" class="container-fluid">
+      <h1 style="text-align: center;">WHAT WE DO</h1>
+      <h3 style="text-align: center;">lorem ipsum...</h3><br><br>
+      <div class="cartoes">
+          <div class="cartaoEdit">
+              <div class="card-image"><img src="../img/services/responsive.png" alt="phone"></div>
+              <div class="cartaoDescricao">
+                  <h4><strong>Fully responsive</strong></h4>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                  facere voluptatum voluptatem ullam expedita nemo minima. </div>
+          </div>
+          <div class="cartaoEdit">
+              <div class="card-image"><img src="../img/services/bs3.png" alt="bootstrap3 logo"></div>
+              <div class="cartaoDescricao">
+                  <h4><strong>Bootstrap3</strong></h4>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                  facere voluptatum voluptatem ullam expedita nemo minima. </div>
+          </div>
+          <div class="cartaoEdit">
+              <div class="card-image"><img src="../img/services/free.png" alt="free logo"></div>
+              <div class="cartaoDescricao">
+                  <h4><strong>100% free</strong></h4>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta nihil tempore ipsa est delectus officia, 
+                  facere voluptatum voluptatem ullam expedita nemo minima. </div>
+          </div>
       </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="newyork.jpg" alt="New York" width="400" height="300">
-          <p><strong>Bootstrap3</strong></p>
-          <p>High thecnology</p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-          <p><strong>100% free</strong></p>
-          <p>Yes, we are of the open source community!</p>
-        </div>
-      </div>
-    </div><br><br><br><br><br>
+    </div><br><br>
 
-    <!-- END POINT -->
+    <div id="portifolio" class="container-fluid">
+      <div class="container-fluid text-center bg-grey">
+          <h2>PORTIFOLIO</h2>
+          <h4>lorem..</h4>
+          <div class="row text-center">
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img2.jpg" alt="">
+              </div>
+            </div>
 
-<!-- Container (About Section) -->
-<div id="about" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8">
-      <h2>About Company Page</h2><br>
-      <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <br><button class="btn btn-default btn-lg">Get in Touch</button>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-signal logo"></span>
-    </div>
-  </div>
-</div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img1.jpg" alt="">
+              </div>
+            </div>
 
-<div class="container-fluid bg-grey">
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-globe logo slideanim"></span>
-    </div>
-    <div class="col-sm-8">
-      <h2>Our Values</h2><br>
-      <h4><strong>MISSION:</strong> Our mission lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h4><br>
-      <p><strong>VISION:</strong> Our vision Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-    </div>
-  </div>
-</div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img4.jpg" alt="">
+              </div>
+            </div>
 
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-off logo-small"></span>
-      <h4>POWER</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart logo-small"></span>
-      <h4>LOVE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-lock logo-small"></span>
-      <h4>JOB DONE</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-  <br><br>
-  <div class="row slideanim">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-leaf logo-small"></span>
-      <h4>GREEN</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-certificate logo-small"></span>
-      <h4>CERTIFIED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-wrench logo-small"></span>
-      <h4 style="color:#303030;">HARD WORK</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-</div>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img3.jpg" alt="">
+              </div>
+            </div>
 
-<!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  <h2>Portfolio</h2><br>
-  <h4>What we have created</h4>
-  <div class="row text-center slideanim">
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="paris.jpg" alt="Paris" width="400" height="300">
-        <p><strong>Paris</strong></p>
-        <p>Yes, we built Paris</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="newyork.jpg" alt="New York" width="400" height="300">
-        <p><strong>New York</strong></p>
-        <p>We built New York</p>
-      </div>
-    </div>
-    <div class="col-sm-4">
-      <div class="thumbnail">
-        <img src="sanfran.jpg" alt="San Francisco" width="400" height="300">
-        <p><strong>San Francisco</strong></p>
-        <p>Yes, San Fran is ours</p>
-      </div>
-    </div>
-  </div><br>
-  
-  <h2>What our customers say</h2>
-  <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-    </ol>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img6.jpg" alt="">
+              </div>
+            </div>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <h4>"This company is the best. I am so happy with the result!"<br><span>Michael Roe, Vice President, Comment Box</span></h4>
-      </div>
-      <div class="item">
-        <h4>"One word... WOW!!"<br><span>John Doe, Salesman, Rep Inc</span></h4>
-      </div>
-      <div class="item">
-        <h4>"Could I... BE any more happy with this company?"<br><span>Chandler Bing, Actor, FriendsAlot</span></h4>
+            <div class="col-sm-4">
+              <div class="thumbnail">
+                  <img src="../img/portfolio/img5.jpg" alt="">
+              </div>
+            </div>
+
+          </div>
       </div>
     </div>
 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
-  </div>
-</div>
-
-<!-- Container (Pricing Section) -->
-<div id="pricing" class="container-fluid">
-  <div class="text-center">
-    <h2>Pricing</h2>
-    <h4>Choose a payment plan that works for you</h4>
-  </div>
-  <div class="row slideanim">
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Basic</h1>
+    <div id="clients" class="container-fluid">
+        <h1 style="text-align: center; padding: 15px;">CLIENTS</h1><br><br>
+        <div class="container-fluid text-center bg-grey">
+            <img src="../img/clients/img1.png" alt="">
+            <img src="../img/clients/img2.png" alt="">
+            <img src="../img/clients/img3.png" alt="">
+            <img src="../img/clients/img4.png" alt="">
         </div>
-        <div class="panel-body">
-          <p><strong>20</strong> Lorem</p>
-          <p><strong>15</strong> Ipsum</p>
-          <p><strong>5</strong> Dolor</p>
-          <p><strong>2</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$19</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>     
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Pro</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>50</strong> Lorem</p>
-          <p><strong>25</strong> Ipsum</p>
-          <p><strong>10</strong> Dolor</p>
-          <p><strong>5</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$29</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>       
-    <div class="col-sm-4 col-xs-12">
-      <div class="panel panel-default text-center">
-        <div class="panel-heading">
-          <h1>Premium</h1>
-        </div>
-        <div class="panel-body">
-          <p><strong>100</strong> Lorem</p>
-          <p><strong>50</strong> Ipsum</p>
-          <p><strong>25</strong> Dolor</p>
-          <p><strong>10</strong> Sit</p>
-          <p><strong>Endless</strong> Amet</p>
-        </div>
-        <div class="panel-footer">
-          <h3>$49</h3>
-          <h4>per month</h4>
-          <button class="btn btn-lg">Sign Up</button>
-        </div>
-      </div>      
-    </div>    
-  </div>
-</div>
-
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Contact us and we'll get back to you within 24 hours.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+
+    <div id="about" class="container-fluid">
+        <h1 style="text-align: center;">ABOUT US</h1>
+        <h3 style="text-align: center;">lorem ipsum</h3>
+        <div id="about-text">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique. </p>
+            <img src="../img/about/graph.png" alt="about">
         </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
-        </div>
-      </div>
+        
     </div>
-  </div>
-</div>
 
-<!-- Image of location/map -->
-<img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%">
+    <div id="contact" class="container-fluid bg-grey">
+        <h2 class="text-center">Contact us</h2><br><br>
+        <div class="row">
+          <div class="col-sm-5">
+            <h3>lorem ipsum...</h3><br>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Osasco, SP 00000-000 BR</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>info@fatecosasco.com</p>
+            <br>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:50px" id="svg1"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:50px" id="svg2"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:50px" id="svg3"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:50px" id="svg4"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM164 356c-55.3 0-100-44.7-100-100s44.7-100 100-100c27 0 49.5 9.8 67 26.2l-27.1 26.1c-7.4-7.1-20.3-15.4-39.8-15.4-34.1 0-61.9 28.2-61.9 63.2 0 34.9 27.8 63.2 61.9 63.2 39.6 0 54.4-28.5 56.8-43.1H164v-34.4h94.4c1 5 1.6 10.1 1.6 16.6 0 57.1-38.3 97.6-96 97.6zm220-81.8h-29v29h-29.2v-29h-29V245h29v-29H355v29h29v29.2z"/></svg>
+            <br>
+          </div>
+          <div class="col-sm-7">
+            <div class="row">
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
+                <input class="form-control" id="email" name="email" placeholder="Email" type="text" onfocus="redefinirMsg()" required>
+                <span id="error-email"></span>
+              </div>
+              <div class="col-sm-12 form-group">
+                <input class="form-control" id="tel" name="tel" placeholder="Phone" type="text" required>
+              </div>
+            </div>
+            <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="9"></textarea><br>
+            <div class="row">
+              <div class="col-sm-12 form-group">
+                <button class="btn btn-default pull-right" type="submit" id="botao">Send</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+      const name = document.getElementById('name');
+      const email = document.getElementById('email');
+      const tel = document.getElementById('tel');
+      const comments = document.getElementById('comments');
+      const button = document.getElementById('botao')
 
-<footer class="container-fluid text-center">
-  <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-  <p>Bootstrap Theme Made By <a href="https://www.w3schools.com" title="Visit w3schools">www.w3schools.com</a></p>
-</footer>
+      function emailValidar(email) {
+        let emailPattern =
+          /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+        return emailPattern.test(email);
+      }
 
-<script>
-$(document).ready(function(){
-  // Add smooth scrolling to all links in navbar + footer link
-  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 900, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-  
-  $(window).scroll(function() {
-    $(".slideanim").each(function(){
-      var pos = $(this).offset().top;
-
-      var winTop = $(window).scrollTop();
-        if (pos < winTop + 600) {
-          $(this).addClass("slide");
+      button.addEventListener('click', (event) => {
+        event.preventDefault()
+        if(name.value && email.value && tel.value && comments.value != "") {       
+          if(tel.value.length != 11 || tel.value.length != 13){
+            alert('formato de telefone invalido Ex: (11)120394282')
+          }
+          else if(emailValidar(email.value) != true) {
+            alert("formato de email invalido Ex: email@dominio.com")
+          }
+          else {
+            alert('enviado!')
+          }
         }
-    });
-  });
-})
-</script>
+        else {
+          alert('todos os campos devem ser preenchidos!')
+        }
 
+      })
+    </script>
+    
+    <footer class="container-fluid text-center">
+      <a href="#myPage">
+        <span class="glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <p><b>GET BACK TO TOP</b></p>
+    </footer>
 </body>
 </html>
