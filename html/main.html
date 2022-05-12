@@ -15,6 +15,10 @@
       padding: 100px 25px;
     }
 
+    .jumbotron button {
+      margin-left: 100px;
+    }
+
     #services {
       padding: 65px;
     }
@@ -24,7 +28,7 @@
     }
 
     * {
-        font:  'Montserrat', sans-serif;;
+        font:  'Montserrat', sans-serif;
     }
 
     .cartoes {
@@ -37,7 +41,7 @@
 
     .cartaoEdit {
         border-radius: 5px;
-        box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+        box-shadow: 2px 2px 5px rgb(0,0,0);
         overflow: hidden;
         width: 315px;
         height: 370px;
@@ -79,8 +83,8 @@
 
     .thumbnail {
         padding: 0 0 10px 0;
-        border: none;
-        border-radius: 1;
+        border: 1px solid white;
+        border-radius: 3;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
@@ -95,14 +99,12 @@
         overflow: hidden;
     }
     
-    /* clients CSS */
     #clients {
       margin-top: 90px;
       margin-bottom: 200px;
       padding: 65px;
     }
 
-    /* about  CSS */
     #about {
       background-color: yellow;
       margin-top: 90px;
@@ -121,17 +123,14 @@
       padding-left: 50px; 
     }
 
-    /* contact  CSS */
     #contact {
       padding: 65px;
       background-color: whitesmoke;
     }
 
-
-    /* navbar */
     .navbar {
         margin-bottom: 0;
-        background-color: rgba(245, 245, 245, 0.89);
+        background-color: rgba(202, 201, 201, 0.856);
         z-index: 9999;
         border: 0;
         font-size: 12px !important;
@@ -161,45 +160,28 @@
         color: #fff !important;
     }
 
-    /* SVG */
     svg {
       height:15px;
     }
 
     #svg1:hover {
-      fill: blue;
+      fill: rgb(0, 119, 255);
     }
 
     #svg2:hover {
-      fill: rgb(0, 0, 112);
+      fill: rgb(90, 90, 211);
     }
 
     #svg3:hover {
-      fill: rgb(0, 110, 255);
+      fill: rgb(15, 96, 201);
     }
 
     #svg4:hover {
-      fill: rgb(241, 81, 81);
+      fill: rgb(238, 28, 28);
     }
 
-    /* subtitulos */
-    .title {
-      border-left: 5px solid blueviolet;
-      margin: auto;
-      font-size: 22pt;
-      padding: 10px;
-    }
-
-    .title1 {
-      border-left: 5px solid whitesmoke;
-      margin: auto;
-      font-size: 22pt;
-      padding: 10px;
-    }
-
-    /* formulario */
     form{
-      font-family: Calibri, sans-serif;
+      font:  'Montserrat', sans-serif;
       font-size: 18px;
     }
 
@@ -221,32 +203,24 @@
       display: inline-block;
     }
 
-    input[type="text"], input[type="email"]{
-      padding: 4px;
+    input[type="text"]{
+      padding: 6px;
       border-radius: 5px;
-      
     }
 
-    input:invalid{
-      border-color: crimson;
-      box-shadow: 0px 0px 3px crimson;
+    .div_alinhada {
+      width: 100%; 
+      display: flex;
     }
 
-    input:focus{
-      outline: none;
-    }
-
-    input:focus:invalid{
-      box-shadow: none;
-    }
-
-    span{
-      color: crimson;
+    .div_alinhada p {
+      float: right;
+      margin-top: 90px;
     }
 
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="inicioPagina" data-spy="scroll" data-target=".navbar" data-offset="60">
 
     <div id="home" class="container-fluid">
       <nav class="navbar navbar-default navbar-fixed-top">
@@ -257,17 +231,17 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M320 336c0 8.844-7.156 16-16 16h-96C199.2 352 192 344.8 192 336V288H0v144C0 457.6 22.41 480 48 480h416c25.59 0 48-22.41 48-48V288h-192V336zM464 96H384V48C384 22.41 361.6 0 336 0h-160C150.4 0 128 22.41 128 48V96H48C22.41 96 0 118.4 0 144V256h512V144C512 118.4 489.6 96 464 96zM336 96h-160V48h160V96z"/></svg>   FATEC OSASCO</a>
+              <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M488.6 104.1C505.3 122.2 513 143.8 511.9 169.8V372.2C511.5 398.6 502.7 420.3 485.4 437.3C468.2 454.3 446.3 463.2 419.9 464H92.02C65.57 463.2 43.81 454.2 26.74 436.8C9.682 419.4 .7667 396.5 0 368.2V169.8C.7667 143.8 9.682 122.2 26.74 104.1C43.81 87.75 65.57 78.77 92.02 78H121.4L96.05 52.19C90.3 46.46 87.42 39.19 87.42 30.4C87.42 21.6 90.3 14.34 96.05 8.603C101.8 2.868 109.1 0 117.9 0C126.7 0 134 2.868 139.8 8.603L213.1 78H301.1L375.6 8.603C381.7 2.868 389.2 0 398 0C406.8 0 414.1 2.868 419.9 8.603C425.6 14.34 428.5 21.6 428.5 30.4C428.5 39.19 425.6 46.46 419.9 52.19L394.6 78L423.9 78C450.3 78.77 471.9 87.75 488.6 104.1H488.6zM449.8 173.8C449.4 164.2 446.1 156.4 439.1 150.3C433.9 144.2 425.1 140.9 416.4 140.5H96.05C86.46 140.9 78.6 144.2 72.47 150.3C66.33 156.4 63.07 164.2 62.69 173.8V368.2C62.69 377.4 65.95 385.2 72.47 391.7C78.99 398.2 86.85 401.5 96.05 401.5H416.4C425.6 401.5 433.4 398.2 439.7 391.7C446 385.2 449.4 377.4 449.8 368.2L449.8 173.8zM185.5 216.5C191.8 222.8 195.2 230.6 195.6 239.7V273C195.2 282.2 191.9 289.9 185.8 296.2C179.6 302.5 171.8 305.7 162.2 305.7C152.6 305.7 144.7 302.5 138.6 296.2C132.5 289.9 129.2 282.2 128.8 273V239.7C129.2 230.6 132.6 222.8 138.9 216.5C145.2 210.2 152.1 206.9 162.2 206.5C171.4 206.9 179.2 210.2 185.5 216.5H185.5zM377 216.5C383.3 222.8 386.7 230.6 387.1 239.7V273C386.7 282.2 383.4 289.9 377.3 296.2C371.2 302.5 363.3 305.7 353.7 305.7C344.1 305.7 336.3 302.5 330.1 296.2C323.1 289.9 320.7 282.2 320.4 273V239.7C320.7 230.6 324.1 222.8 330.4 216.5C336.7 210.2 344.5 206.9 353.7 206.5C362.9 206.9 370.7 210.2 377 216.5H377z"/></svg>  FATEC OSASCO</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
               <ul class="nav navbar-nav navbar-right">
                 <li><a href="#home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5C575.8 273.5 560.8 287.6 543.8 287.6H511.8L512.5 447.7C512.5 450.5 512.3 453.1 512 455.8V472C512 494.1 494.1 512 472 512H456C454.9 512 453.8 511.1 452.7 511.9C451.3 511.1 449.9 512 448.5 512H392C369.9 512 352 494.1 352 472V384C352 366.3 337.7 352 320 352H256C238.3 352 224 366.3 224 384V472C224 494.1 206.1 512 184 512H128.1C126.6 512 125.1 511.9 123.6 511.8C122.4 511.9 121.2 512 120 512H104C81.91 512 64 494.1 64 472V360C64 359.1 64.03 358.1 64.09 357.2V287.6H32.05C14.02 287.6 0 273.5 0 255.5C0 246.5 3.004 238.5 10.01 231.5L266.4 8.016C273.4 1.002 281.4 0 288.4 0C295.4 0 303.4 2.004 309.5 7.014L564.8 231.5C572.8 238.5 576.9 246.5 575.8 255.5L575.8 255.5z"/></svg>
                    HOME</a></li>
-                <li><a href="#services"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M280 145.3V112h16C309.3 112 320 101.3 320 88S309.3 64 296 64H215.1C202.7 64 192 74.75 192 87.1S202.7 112 215.1 112H232v33.32C119.6 157.3 32 252.4 32 368h448C480 252.4 392.4 157.3 280 145.3zM488 400h-464C10.75 400 0 410.7 0 423.1C0 437.3 10.75 448 23.1 448h464c13.25 0 24-10.75 24-23.1C512 410.7 501.3 400 488 400z"/></svg>  SERVICES</a></li>
+                <li><a href="#services"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M347.1 215.4c11.7-32.6 45.4-126.9 45.4-157.1 0-26.6-15.7-48.9-43.7-48.9-44.6 0-84.6 131.7-97.1 163.1C242 144 196.6 0 156.6 0c-31.1 0-45.7 22.9-45.7 51.7 0 35.3 34.2 126.8 46.6 162-6.3-2.3-13.1-4.3-20-4.3-23.4 0-48.3 29.1-48.3 52.6 0 8.9 4.9 21.4 8 29.7-36.9 10-51.1 34.6-51.1 71.7C46 435.6 114.4 512 210.6 512c118 0 191.4-88.6 191.4-202.9 0-43.1-6.9-82-54.9-93.7zM311.7 108c4-12.3 21.1-64.3 37.1-64.3 8.6 0 10.9 8.9 10.9 16 0 19.1-38.6 124.6-47.1 148l-34-6 33.1-93.7zM142.3 48.3c0-11.9 14.5-45.7 46.3 47.1l34.6 100.3c-15.6-1.3-27.7-3-35.4 1.4-10.9-28.8-45.5-119.7-45.5-148.8zM140 244c29.3 0 67.1 94.6 67.1 107.4 0 5.1-4.9 11.4-10.6 11.4-20.9 0-76.9-76.9-76.9-97.7.1-7.7 12.7-21.1 20.4-21.1zm184.3 186.3c-29.1 32-66.3 48.6-109.7 48.6-59.4 0-106.3-32.6-128.9-88.3-17.1-43.4 3.8-68.3 20.6-68.3 11.4 0 54.3 60.3 54.3 73.1 0 4.9-7.7 8.3-11.7 8.3-16.1 0-22.4-15.5-51.1-51.4-29.7 29.7 20.5 86.9 58.3 86.9 26.1 0 43.1-24.2 38-42 3.7 0 8.3.3 11.7-.6 1.1 27.1 9.1 59.4 41.7 61.7 0-.9 2-7.1 2-7.4 0-17.4-10.6-32.6-10.6-50.3 0-28.3 21.7-55.7 43.7-71.7 8-6 17.7-9.7 27.1-13.1 9.7-3.7 20-8 27.4-15.4-1.1-11.2-5.7-21.1-16.9-21.1-27.7 0-120.6 4-120.6-39.7 0-6.7.1-13.1 17.4-13.1 32.3 0 114.3 8 138.3 29.1 18.1 16.1 24.3 113.2-31 174.7zm-98.6-126c9.7 3.1 19.7 4 29.7 6-7.4 5.4-14 12-20.3 19.1-2.8-8.5-6.2-16.8-9.4-25.1z"/></svg>  SERVICES</a></li>
                 <li><a href="#portifolio"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M194.6 32H317.4C338.1 32 356.4 45.22 362.9 64.82L373.3 96H448C483.3 96 512 124.7 512 160V416C512 451.3 483.3 480 448 480H64C28.65 480 0 451.3 0 416V160C0 124.7 28.65 96 64 96H138.7L149.1 64.82C155.6 45.22 173.9 32 194.6 32H194.6zM256 384C309 384 352 341 352 288C352 234.1 309 192 256 192C202.1 192 160 234.1 160 288C160 341 202.1 384 256 384z"/></svg>  PORTIFOLIO</a></li>
-                <li><a href="#clients"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M208 48C208 74.51 186.5 96 160 96C133.5 96 112 74.51 112 48C112 21.49 133.5 0 160 0C186.5 0 208 21.49 208 48zM152 352V480C152 497.7 137.7 512 120 512C102.3 512 88 497.7 88 480V256.9L59.43 304.5C50.33 319.6 30.67 324.5 15.52 315.4C.3696 306.3-4.531 286.7 4.573 271.5L62.85 174.6C80.2 145.7 111.4 128 145.1 128H174.9C208.6 128 239.8 145.7 257.2 174.6L315.4 271.5C324.5 286.7 319.6 306.3 304.5 315.4C289.3 324.5 269.7 319.6 260.6 304.5L232 256.9V480C232 497.7 217.7 512 200 512C182.3 512 168 497.7 168 480V352L152 352z"/></svg>  CLIENTS</a></li>
+                <li><a href="#clients"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M207.8 20.73c-93.45 18.32-168.7 93.66-187 187.1c-27.64 140.9 68.65 266.2 199.1 285.1c19.01 2.888 36.17-12.26 36.17-31.49l.0001-.6631c0-15.74-11.44-28.88-26.84-31.24c-84.35-12.98-149.2-86.13-149.2-174.2c0-102.9 88.61-185.5 193.4-175.4c91.54 8.869 158.6 91.25 158.6 183.2l0 16.16c0 22.09-17.94 40.05-40 40.05s-40.01-17.96-40.01-40.05v-120.1c0-8.847-7.161-16.02-16.01-16.02l-31.98 .0036c-7.299 0-13.2 4.992-15.12 11.68c-24.85-12.15-54.24-16.38-86.06-5.106c-38.75 13.73-68.12 48.91-73.72 89.64c-9.483 69.01 43.81 128 110.9 128c26.44 0 50.43-9.544 69.59-24.88c24 31.3 65.23 48.69 109.4 37.49C465.2 369.3 496 324.1 495.1 277.2V256.3C495.1 107.1 361.2-9.332 207.8 20.73zM239.1 304.3c-26.47 0-48-21.56-48-48.05s21.53-48.05 48-48.05s48 21.56 48 48.05S266.5 304.3 239.1 304.3z"/></svg>  CLIENTS</a></li>
                 <li><a href="#about"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M256 0C114.6 0 0 114.6 0 256s114.6 256 256 256s256-114.6 256-256S397.4 0 256 0zM256 128c17.67 0 32 14.33 32 32c0 17.67-14.33 32-32 32S224 177.7 224 160C224 142.3 238.3 128 256 128zM296 384h-80C202.8 384 192 373.3 192 360s10.75-24 24-24h16v-64H224c-13.25 0-24-10.75-24-24S210.8 224 224 224h32c13.25 0 24 10.75 24 24v88h16c13.25 0 24 10.75 24 24S309.3 384 296 384z"/></svg>  ABOUT</a></li>
-                <li><a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M512 32H64C28.65 32 0 60.65 0 96v320c0 35.35 28.65 64 64 64h448c35.35 0 64-28.65 64-64V96C576 60.65 547.3 32 512 32zM176 128c35.35 0 64 28.65 64 64s-28.65 64-64 64s-64-28.65-64-64S140.7 128 176 128zM272 384h-192C71.16 384 64 376.8 64 368C64 323.8 99.82 288 144 288h64c44.18 0 80 35.82 80 80C288 376.8 280.8 384 272 384zM496 320h-128C359.2 320 352 312.8 352 304S359.2 288 368 288h128C504.8 288 512 295.2 512 304S504.8 320 496 320zM496 256h-128C359.2 256 352 248.8 352 240S359.2 224 368 224h128C504.8 224 512 231.2 512 240S504.8 256 496 256zM496 192h-128C359.2 192 352 184.8 352 176S359.2 160 368 160h128C504.8 160 512 167.2 512 176S504.8 192 496 192z"/></svg>  CONTACT</a></li>
+                <li><a href="#contact"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M288 48C288 21.49 309.5 0 336 0H432C458.5 0 480 21.49 480 48V192H520V120C520 106.7 530.7 96 544 96C557.3 96 568 106.7 568 120V192H592C618.5 192 640 213.5 640 240V464C640 490.5 618.5 512 592 512H336C309.5 512 288 490.5 288 464V48zM352 112C352 120.8 359.2 128 368 128H400C408.8 128 416 120.8 416 112V80C416 71.16 408.8 64 400 64H368C359.2 64 352 71.16 352 80V112zM368 160C359.2 160 352 167.2 352 176V208C352 216.8 359.2 224 368 224H400C408.8 224 416 216.8 416 208V176C416 167.2 408.8 160 400 160H368zM352 304C352 312.8 359.2 320 368 320H400C408.8 320 416 312.8 416 304V272C416 263.2 408.8 256 400 256H368C359.2 256 352 263.2 352 272V304zM528 256C519.2 256 512 263.2 512 272V304C512 312.8 519.2 320 528 320H560C568.8 320 576 312.8 576 304V272C576 263.2 568.8 256 560 256H528zM512 400C512 408.8 519.2 416 528 416H560C568.8 416 576 408.8 576 400V368C576 359.2 568.8 352 560 352H528C519.2 352 512 359.2 512 368V400zM246.6 233.4C259.1 245.9 259.1 266.1 246.6 278.6L166.6 358.6C154.1 371.1 133.9 371.1 121.4 358.6C108.9 346.1 108.9 325.9 121.4 313.4L146.7 288H32C14.33 288 0 273.7 0 256C0 238.3 14.33 224 32 224H146.7L121.4 198.6C108.9 186.1 108.9 165.9 121.4 153.4C133.9 140.9 154.1 140.9 166.6 153.4L246.6 233.4z"/></svg>  CONTACT</a></li>
               </ul>
             </div>
           </div>
@@ -277,16 +251,19 @@
     <div class="jumbotron">
         <h1 style="text-align: center;">FATEC OSASCO </h1>
         <p style="text-align: center;">Start your business or personal site right now!</p> 
-        <p style="padding: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus repudiandae nesciunt recusandae! Debitis, accusamus distinctio eligendi 
+        <div class="div_alinhada">
+          <img src="../img/hero/macbook.png" alt="macbook" style="padding: 30px; align-items: center;"> 
+          <p style="padding: 30px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus repudiandae nesciunt recusandae! Debitis, accusamus distinctio eligendi 
             praesentium nulla earum repellendus ipsum officia magni cupiditate expedita ipsa incidunt totam facilis numquam.</p>
-        <img src="../img/hero/macbook.png" alt="macbook">
-        <button class="btn btn-default btn-lg">DOWNLOAD NOW!</button>
-        <button class="btn btn-default btn-lg" style="margin-left: 20px;">LEARN MORE!</button>
+        </div>
+        <button class="btn btn-default btn-lg" style="background-color:black; color:aliceblue">DOWNLOAD NOW!</button>
+        <button class="btn btn-default btn-lg" style="background-color:black; color:aliceblue;">LEARN MORE!</button>
+
     </div><br>
 
     <div id="services" class="container-fluid">
       <h1 style="text-align: center;">WHAT WE DO</h1>
-      <h3 style="text-align: center;">lorem ipsum...</h3><br><br>
+      <h3 style="text-align: center;">details</h3><br><br>
       <div class="cartoes">
           <div class="cartaoEdit">
               <div class="card-image"><img src="../img/services/responsive.png" alt="phone"></div>
@@ -315,7 +292,7 @@
     <div id="portifolio" class="container-fluid">
       <div class="container-fluid text-center bg-grey">
           <h2>PORTIFOLIO</h2>
-          <h4>lorem..</h4>
+          <h4>check our jobs!</h4>
           <div class="row text-center">
             <div class="col-sm-4">
               <div class="thumbnail">
@@ -374,12 +351,12 @@
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
               aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
-              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique. <br>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
               aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
               aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
-              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique. <br><br>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
               aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
@@ -391,17 +368,23 @@
     </div>
 
     <div id="contact" class="container-fluid bg-grey">
-        <h2 class="text-center">Contact us</h2><br><br>
+        <h2 class="text-center" style="padding: 30px;">CONTACT US</h2><br><br>
         <div class="row">
           <div class="col-sm-5">
-            <h3>lorem ipsum...</h3><br>
-            <p><span class="glyphicon glyphicon-map-marker"></span>Osasco, SP 00000-000 BR</p>
-            <p><span class="glyphicon glyphicon-envelope"></span>info@fatecosasco.com</p>
+            <h3>lorem ipsum</h3><br>
+            <p><span class="glyphicon glyphicon-map-marker"></span>Osasco, SP 06296-220 BR</p>
+            <p><span class="glyphicon glyphicon-envelope"></span>  f216.secretaria@fatec.sp.gov.br</p>
+            <p><span class="glyphicon glyphicon-phone"></span>Phone: (5511) 3603-9910</p>
             <br>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:50px" id="svg1"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:50px" id="svg2"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:50px" id="svg3"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zm-48.9 158.8c.2 2.8.2 5.7.2 8.5 0 86.7-66 186.6-186.6 186.6-37.2 0-71.7-10.8-100.7-29.4 5.3.6 10.4.8 15.8.8 30.7 0 58.9-10.4 81.4-28-28.8-.6-53-19.5-61.3-45.5 10.1 1.5 19.2 1.5 29.6-1.2-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3a65.447 65.447 0 0 1-29.2-54.6c0-12.2 3.2-23.4 8.9-33.1 32.3 39.8 80.8 65.8 135.2 68.6-9.3-44.5 24-80.6 64-80.6 18.9 0 35.9 7.9 47.9 20.7 14.8-2.8 29-8.3 41.6-15.8-4.9 15.2-15.2 28-28.8 36.1 13.2-1.4 26-5.1 37.8-10.2-8.9 13.1-20.1 24.7-32.9 34z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" style="height:50px" id="svg4"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM164 356c-55.3 0-100-44.7-100-100s44.7-100 100-100c27 0 49.5 9.8 67 26.2l-27.1 26.1c-7.4-7.1-20.3-15.4-39.8-15.4-34.1 0-61.9 28.2-61.9 63.2 0 34.9 27.8 63.2 61.9 63.2 39.6 0 54.4-28.5 56.8-43.1H164v-34.4h94.4c1 5 1.6 10.1 1.6 16.6 0 57.1-38.3 97.6-96 97.6zm220-81.8h-29v29h-29.2v-29h-29V245h29v-29H355v29h29v29.2z"/></svg>
+            <br> <br>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta quos temporibus delectus a debitis deleniti, 
+              aperiam cum distinctio officia ea in qui, atque non natus quae et eius nostrum similique.</p>
             <br>
           </div>
           <div class="col-sm-7">
@@ -410,17 +393,17 @@
                 <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
               </div>
               <div class="col-sm-6 form-group">
+                <input class="form-control" id="tel" name="tel" placeholder="Phone" type="text" required>
+              </div>
+              <div class="col-sm-6 form-group">
                 <input class="form-control" id="email" name="email" placeholder="Email" type="text" onfocus="redefinirMsg()" required>
                 <span id="error-email"></span>
-              </div>
-              <div class="col-sm-12 form-group">
-                <input class="form-control" id="tel" name="tel" placeholder="Phone" type="text" required>
               </div>
             </div>
             <textarea class="form-control" id="comments" name="comments" placeholder="Message" rows="9"></textarea><br>
             <div class="row">
               <div class="col-sm-12 form-group">
-                <button class="btn btn-default pull-right" type="submit" id="botao">Send</button>
+                <button class="btn btn-default pull-right" type="submit" id="botao" style="background-color:yellow; margin-right:720px;">Send</button>
               </div>
             </div>
           </div>
@@ -433,6 +416,11 @@
       const comments = document.getElementById('comments');
       const button = document.getElementById('botao')
 
+      const telefoneValidar = (tel) => {
+        const telefoneRegex = /^\(\d{2}\) \d{4,5}-\d{4}$/gi;
+        return telefoneRegex.test(tel);
+      };
+
       function emailValidar(email) {
         let emailPattern =
           /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
@@ -442,11 +430,11 @@
       button.addEventListener('click', (event) => {
         event.preventDefault()
         if(name.value && email.value && tel.value && comments.value != "") {       
-          if(tel.value.length != 11 || tel.value.length != 13){
-            alert('formato de telefone invalido Ex: (11)120394282')
-          }
-          else if(emailValidar(email.value) != true) {
+          if(emailValidar(email.value) != true) {
             alert("formato de email invalido Ex: email@dominio.com")
+          }
+          else if(telefoneValidar(tel.value) != true){
+            alert('formato de telefone invalido \n Formatos validos: \n (41) 99778-2914; (41) 9778-2914; \n (411) 99778-2914')
           }
           else {
             alert('enviado!')
@@ -458,12 +446,13 @@
 
       })
     </script>
-    
-    <footer class="container-fluid text-center">
-      <a href="#myPage">
-        <span class="glyphicon glyphicon-chevron-up"></span>
-      </a>
-      <p><b>GET BACK TO TOP</b></p>
+
+    <footer class="text-center" style="background-color:yellow;">
+      <a class="up-arrow" href="#inicioPagina" data-toggle="tooltip" title="TO TOP">
+        <span class="glyphicon glyphicon-chevron-up" style="color:black;"></span>
+      </a><br><br>
+      <b><p>TOP of PAGE <a href="#inicioPagina" data-toggle="tooltip"></a></p></b>
     </footer>
+
 </body>
 </html>
